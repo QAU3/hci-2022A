@@ -7,7 +7,7 @@ const noviceController = require('../controllers/novice');
 //Gets all the news in the DB
 novice.get('/', async (req, res, next) => {
   try {
-    res.json(noviceController.allNovice());
+    noviceController.allNovice();
   } catch (err) {
     console.log(err);
     res.sendStatus(500);
