@@ -1,10 +1,10 @@
 const Novica = require('../models/Novica');
 
-// const dataPool = {};
+const dataPool = {};
 
-// dataPool.allNovice = async () => {
-//   let query = await Novica.find().exec();
-//   console.log(query);
-// };
+dataPool.allNovice = async () => {
+  let query = await Novica.find().exec();
+  console.log(query);
+};
 
 module.exports = dataPool;
